@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
+    <link rel="stylesheet" href="static/style.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Repositório</label>
+        <ul>
+            <li><a class="active" href="index">Home</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="about">Acerca</a></li>
+            <li><a href="contacts">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    {% block content %}
+
+    {% endblock  %}
+
+    <div class="footer">
+        Webapp realizada com Flask &copy 2020
+    </div>
+
+
+</body>
+</html>

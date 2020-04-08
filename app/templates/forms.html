@@ -1,0 +1,18 @@
+
+{% extends "layout.html" %}
+
+{ % block title %} Formulário { % endblock %}
+
+{% block content %}
+
+    <p>Preencha o formulário:</p>
+        
+        <form action="result" method="GET">
+        <fieldset>
+            <p>Nome: <input type="text" name="nome"></p>
+            <p>Idade: <input type="text" name="idade"></p>
+            <p>Curso: <input type="text" name="curso"></p>
+            <input type="submit" value="submeter">
+        </fieldset>
+    </form>
+{% endblock %}
